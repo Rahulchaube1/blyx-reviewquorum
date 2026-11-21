@@ -1,0 +1,13 @@
+use reviewquorum;
+
+fn main() {
+    let reviewers = [7, 7, 9];
+    let required = 3.0;
+    let result = reviewquorum_tally(reviewers, required);
+    if len(result) == 0 { println!("invalid"); return; }
+    let mut i = 0;
+    while i < len(result) {
+        println!(at(result, i));
+        i += 1;
+    }
+}
